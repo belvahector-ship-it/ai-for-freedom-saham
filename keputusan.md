@@ -13,3 +13,4 @@
 | 2026-11-10 | Tahap 2: semesta 108 emiten (16 elite + 25 kandidat bluechip + 67 kandidat calon). Kriteria bluechip: 30 kapitalisasi terbesar, lolos gerbang, nilai transaksi ≥ Rp20 M/hari. Calon: peringkat 31–100, lolos gerbang, laba tumbuh, ROE ≥ 10% |
 | 2026-11-10 | Gerbang grid: nilai transaksi ≥ Rp5 M/hari, publik ≥ 15%, laba tidak turun > 30%, bukan FCA/akselerasi. Bobot skor 25/25/20/15/15 (bisa diubah) |
 | 2026-11-10 | Data mentah IDX/Yahoo tidak diunggah; yang dipublikasikan hanya tabel olahan + skrip |
+| 2026-11-10 | Tahap 3: tangga grid L5 untuk 16 elite (langkah = σ harian dibulatkan ke tick harga, B1 dari *support*, 5 level). Ditampilkan bersama status rem L6. Bukan zona beli |

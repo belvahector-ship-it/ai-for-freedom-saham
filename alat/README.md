@@ -7,6 +7,7 @@ Semua skrip **hanya membaca data dan menghitung statistik deskriptif**. Tidak ad
 | `ambil_yahoo.py` | Harga harian 2 tahun dari Yahoo (`.JK`, `^JKSE`, `IDR=X`) |
 | `hitung_metrik.py` | Menggabungkan data Yahoo dan ekspor IDX → `metrik.csv` (gerbang + skor) |
 | `buat_tabel.py` | `metrik.csv` → tabel Markdown untuk docs/05 |
+| `tangga_grid.py` | `metrik.csv` + `idx_agregat.csv` + Yahoo → tangga grid L5 per emiten (`tangga.csv`, `tangga.md`) untuk docs/07 |
 
 ## Ekspor data IDX (manual, lewat browser)
 Endpoint IDX menolak permintaan langsung dari skrip (403), jadi data diambil dari **tab idx.co.id yang dibuka di browser sendiri** lewat konsol (`fetch` ke path relatif). Beri jeda **≥ 3 detik** antar-permintaan, karena IDX membalas 429/503 kalau terlalu cepat.
@@ -23,5 +24,6 @@ Lalu jalankan:
 python ambil_yahoo.py data/yahoo BBRI BMRI ... ^JKSE IDR=X
 python hitung_metrik.py data 2026-11-09
 python buat_tabel.py data > tabel.md
+python tangga_grid.py data elite
 ```
 Data mentah (Yahoo dan IDX) **tidak** disertakan di repo. Ambil sendiri dan patuhi ketentuan penggunaan masing-masing sumber.

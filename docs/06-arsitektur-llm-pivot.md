@@ -98,4 +98,5 @@ Aturan validasi `[SARAN AI]`: JSON yang tidak valid, tanpa sumber, atau `data_ba
 
 ## 9. Jalan berikutnya
 - Tahap 2 (selesai): [04 kondisi bursa 2026](04-kondisi-bursa-2026.md) mengisi kalender kejadian dan skenario untuk L3. [05 matriks faktor emiten](05-matriks-faktor-emiten.md) berisi contoh nyata keluaran L1 (gerbang dan skor) untuk 108 emiten.
+- Tahap 3: [07 tangga grid 16 emiten elite](07-tangga-grid-16-elite.md) adalah contoh nyata keluaran L5 yang ditahan oleh L6.
 - Tahap berikutnya (bila disetujui): prototipe L1 + L5 + L6 dalam Python, uji *paper trading* dengan pembanding acak. **Backtest sengaja belum dilakukan.**

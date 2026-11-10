@@ -27,6 +27,12 @@ Aplikasi kripto mempromosikan bot *grid* "AI Dynamic" yang **otomatis menyesuaik
 - **5 dari 16 emiten elite gugur gerbang grid** (likuiditas atau *free float*). Saham dividen bagus belum tentu cocok untuk grid. **42 dari 51 saham lolos berada di bawah MA200.**
 - Aturan BEI sudah **diverifikasi ke siaran pers resmi**: ARB 7% (Kep-00157/158) sampai 31 Des 2026, lalu **simetris lagi mulai 1 Jan 2027**.
 
+## Contoh kerja Tahap 3 (tangga grid 16 emiten elite, data 10 Nov 2026)
+- **Mesin grid menghitung tangga, rem risiko melarang memasangnya.** IHSG di bawah MA200 dua awal bulan → `boleh_beli_baru = false` untuk semua emiten → [07](docs/07-tangga-grid-16-elite.md).
+- **Langkah realistis 6–125 rupiah (±1,2–4,1% harga)**, dibulatkan ke tick harga. Untung bersih per putaran 0,8–3,7% setelah biaya.
+- **Hanya 3 dari 16 yang tidak sedang dibuang asing dan dekat MA50** (POWR, ASII, ACES). Bank BUMN dan TLKM kena rem penuh.
+- **Saham dividen yang tenang (σ ±1,2%) tidak cocok untuk grid**: untung bersih ±0,8% per putaran.
+
 ## Isi
 | Dokumen | Status |
 |---|---|
@@ -36,6 +42,7 @@ Aplikasi kripto mempromosikan bot *grid* "AI Dynamic" yang **otomatis menyesuaik
 | [04 · Kondisi bursa 2026 & proyeksi](docs/04-kondisi-bursa-2026.md) | ✅ Tahap 2 |
 | [05 · Matriks faktor emiten & skor grid](docs/05-matriks-faktor-emiten.md) | ✅ Tahap 2 |
 | [06 · Arsitektur LLM sebagai pivot](docs/06-arsitektur-llm-pivot.md) | ✅ Tahap 1 |
+| [07 · Tangga grid 16 emiten elite](docs/07-tangga-grid-16-elite.md) | ✅ Tahap 3 (contoh kerja L5 + L6) |
 | [alat/](alat/README.md) | Skrip untuk mengulang matriks (tanpa data mentah) |
 | [sumber.md](sumber.md) · [keputusan.md](keputusan.md) | Daftar sumber dan keputusan pembuat repo |
 
