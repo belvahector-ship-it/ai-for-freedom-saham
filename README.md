@@ -19,15 +19,24 @@ Aplikasi kripto mempromosikan bot *grid* "AI Dynamic" yang **otomatis menyesuaik
 - **Data *order book* real-time tidak tersedia gratis**, dan kode broker serta domisili investor disembunyikan. Lapisan AI realistisnya bekerja **harian** → [03](docs/03-orderbook-depth.md).
 - **Arsitektur LLM pivot**: LLM membaca dan mengklasifikasi rezim dengan kutipan sumber; angka dan order tetap deterministik; aturan risiko keras tidak bisa ditimpa; manusia menekan tombol. **Backtest keputusan LLM rawan *look-ahead bias***, jadi yang sah hanya *forward test* → [06](docs/06-arsitektur-llm-pivot.md).
 
+## Temuan utama Tahap 2 (kondisi bursa + 108 emiten, data IDX per 9 Nov 2026)
+- **IHSG −43,7% dari puncak** (9.135 pada 20 Jan → 5.139 pada 10 Nov). Pemicunya konsultasi **MSCI *Standalone*** (15 Okt) dan IHSG −11,57% dalam sehari. Masalahnya **struktural** (transparansi dan konsentrasi kepemilikan), bukan valuasi: median PER saham lolos saringan 8,1× → [04](docs/04-kondisi-bursa-2026.md).
+- **7 dari 30 emiten berkapitalisasi terbesar bertransaksi < Rp1 M/hari.** Gabungan kapitalisasinya ±Rp1.036 T (21% dari 30 besar). Kapitalisasi besar tidak sama dengan bisa diperdagangkan → [04 §3](docs/04-kondisi-bursa-2026.md#3-gejala-struktural-dalam-data-h-data-idx-getstocksummary--profil-1-jul9-nov-2026).
+- **Asing jual bersih ±Rp16,5 T sejak 16 Okt** di 108 emiten, terkonsentrasi di BBRI, BBCA, BMRI, dan TLKM. Ini tren yang terjadwal, musuh utama grid.
+- **Jarak grid realistis ≈ σ harian 1,6–5,9% (median 3,3%)**, bukan 1% → [05](docs/05-matriks-faktor-emiten.md).
+- **5 dari 16 emiten elite gugur gerbang grid** (likuiditas atau *free float*). Saham dividen bagus belum tentu cocok untuk grid. **42 dari 51 saham lolos berada di bawah MA200.**
+- Aturan BEI sudah **diverifikasi ke siaran pers resmi**: ARB 7% (Kep-00157/158) sampai 31 Des 2026, lalu **simetris lagi mulai 1 Jan 2027**.
+
 ## Isi
 | Dokumen | Status |
 |---|---|
 | [01 · Anatomi grid](docs/01-anatomi-grid.md) | ✅ Tahap 1 |
-| [02 · Migrasi kripto → saham IDX](docs/02-migrasi-kripto-ke-saham.md) | ✅ Tahap 1 |
+| [02 · Migrasi kripto → saham IDX](docs/02-migrasi-kripto-ke-saham.md) | ✅ Tahap 1 (sumber ARB diperbarui di Tahap 2) |
 | [03 · *Order book depth*](docs/03-orderbook-depth.md) | ✅ Tahap 1 |
-| [04 · Kondisi bursa 2026 & proyeksi](docs/04-kondisi-bursa-2026.md) | ⏳ Tahap 2 |
-| [05 · Matriks faktor emiten & skor grid](docs/05-matriks-faktor-emiten.md) | ⏳ Tahap 2 |
+| [04 · Kondisi bursa 2026 & proyeksi](docs/04-kondisi-bursa-2026.md) | ✅ Tahap 2 |
+| [05 · Matriks faktor emiten & skor grid](docs/05-matriks-faktor-emiten.md) | ✅ Tahap 2 |
 | [06 · Arsitektur LLM sebagai pivot](docs/06-arsitektur-llm-pivot.md) | ✅ Tahap 1 |
+| [alat/](alat/README.md) | Skrip untuk mengulang matriks (tanpa data mentah) |
 | [sumber.md](sumber.md) · [keputusan.md](keputusan.md) | Daftar sumber dan keputusan pembuat repo |
 
 **Sengaja belum ada backtest.** Konsep dimatangkan dulu.

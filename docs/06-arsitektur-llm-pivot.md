@@ -97,5 +97,5 @@ Aturan validasi `[SARAN AI]`: JSON yang tidak valid, tanpa sumber, atau `data_ba
 | *Look-ahead bias* | Hanya *forward test* |
 
 ## 9. Jalan berikutnya
-- Tahap 2: [04 kondisi bursa 2026](04-kondisi-bursa-2026.md) dan [05 matriks faktor emiten](05-matriks-faktor-emiten.md), untuk mengisi L1 dan L2 dengan data nyata.
+- Tahap 2 (selesai): [04 kondisi bursa 2026](04-kondisi-bursa-2026.md) mengisi kalender kejadian dan skenario untuk L3. [05 matriks faktor emiten](05-matriks-faktor-emiten.md) berisi contoh nyata keluaran L1 (gerbang dan skor) untuk 108 emiten.
 - Tahap berikutnya (bila disetujui): prototipe L1 + L5 + L6 dalam Python, uji *paper trading* dengan pembanding acak. **Backtest sengaja belum dilakukan.**
