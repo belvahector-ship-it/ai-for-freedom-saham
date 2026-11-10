@@ -1,0 +1,9 @@
+# data mentah & pribadi tidak diunggah
+*.pdf
+*.xlsx
+*.parquet
+raw/
+portofolio*.csv
+.env
+__pycache__/
+.venv/
